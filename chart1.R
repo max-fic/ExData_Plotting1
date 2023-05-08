@@ -1,7 +1,4 @@
 library(tidyverse)
-url='https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip'
-zipfile = 'exdata_data_household_power_consumption.zip'
-csvfile = 'household_power_consumption.txt'
 
 prepare_df =function() {
     url='https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip'
@@ -36,8 +33,6 @@ prepare_df =function() {
     cat('Done.\n')
     return(pwr)
 }
-
-par(mfrow=c(1,1))
 
 # Plot 1
 chart1 = function(pwr) {
